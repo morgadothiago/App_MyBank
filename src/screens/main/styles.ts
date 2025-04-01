@@ -3,7 +3,7 @@ import { colors } from "../../themes/theme";
 import { StatusBar } from "expo-status-bar";
 import Constnts from "expo-constants";
 
-export const Container = styled.SafeAreaView`
+export const Container = styled.View`
   flex: 1;
 `;
 export const Header = styled.View`
