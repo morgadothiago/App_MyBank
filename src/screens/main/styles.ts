@@ -14,7 +14,7 @@ export const Header = styled.View`
 `;
 export const ContainerHeader = styled.SafeAreaView`
   flex: 1;
-  margin-top: ${Constnts.statusBarHeight};
+  margin-top: ${Constnts.statusBarHeight}px;
   justify-content: space-evenly;
 `;
 
