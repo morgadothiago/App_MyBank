@@ -13,6 +13,7 @@ import {
   MoneyTitle,
   MoneyAmount,
   ContainerMenuList,
+  MoneyBlur,
 } from "./styles";
 import IconUserSVG from "../../../assets/svg/icon-user";
 import IconQUestionSVG from "../../../assets/svg/question";
@@ -30,7 +31,7 @@ import IconRecargaSVG from "../../../assets/svg/recarga";
 
 export default function Home() {
   const [name, setName] = useState("Thiago do nascimento morgado");
-  const [showAmount, setShowAmount] = useState(false);
+  const [showAmount, setShowAmount] = useState(true);
 
   const itemMenu = [
     {
@@ -96,7 +97,7 @@ export default function Home() {
       <Content>
         <ContainerMoney>
           <MoneyTitle>Conta</MoneyTitle>
-          <MoneyAmount>R$ 3,000.00</MoneyAmount>
+          {!showAmount ? <MoneyAmount>R$ 3,000.00</MoneyAmount> : <MoneyBlur />}
         </ContainerMoney>
 
         <ContainerMenuList>
@@ -105,7 +106,11 @@ export default function Home() {
             showsHorizontalScrollIndicator={false}
             data={itemMenu}
             renderItem={({ item }) => (
-              <ButtonMenu title={item.name} icon={item.icon} />
+              <ButtonMenu
+                title={item.name}
+                icon={item.icon}
+                onPress={() => Alert.alert("Esta clicando no item", item.name)}
+              />
             )}
           />
         </ContainerMenuList>
