@@ -10,7 +10,10 @@ export const Header = styled.View`
   justify-content: center;
   align-items: center;
 `;
-export const ContainerHeader = styled.View``;
+export const ContainerHeader = styled.View`
+  flex: 1;
+  margin-top: 40px;
+`;
 
 export const Content = styled.View`
   background-color: ${colors.secondary};
