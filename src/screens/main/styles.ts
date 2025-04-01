@@ -9,12 +9,13 @@ export const Container = styled.SafeAreaView`
 export const Header = styled.View`
   background-color: ${colors.primary};
   height: 25%;
-  justify-content: center;
+
   align-items: center;
 `;
 export const ContainerHeader = styled.View`
   flex: 1;
   margin-top: ${Constnts.statusBarHeight};
+  justify-content: space-evenly;
 `;
 
 export const Content = styled.View`
@@ -43,9 +44,9 @@ export const IconServices = styled.View`
 `;
 export const Button = styled.TouchableOpacity``;
 
-export const UserInfo = styled.View``;
 export const UserName = styled.Text`
   width: 85%;
-
-  background-color: red;
+  color: ${colors.secondary};
+  font-family: ${colors.fonts.Roboto_700Bold};
+  font-size: 18px;
 `;

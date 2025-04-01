@@ -41,9 +41,7 @@ export default function Home() {
             </IconServices>
           </IconArea>
 
-          <UserInfo>
-            <UserName>Ola, {name}</UserName>
-          </UserInfo>
+          <UserName>Ola, {name}</UserName>
         </ContainerHeader>
       </Header>
 
