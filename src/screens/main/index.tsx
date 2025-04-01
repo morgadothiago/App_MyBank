@@ -7,7 +7,6 @@ import {
   UserWapper,
   IconServices,
   Button,
-  UserInfo,
   UserName,
   ContainerHeader,
 } from "./styles";
