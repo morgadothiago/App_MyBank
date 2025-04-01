@@ -21,6 +21,8 @@ export const ContainerHeader = styled.SafeAreaView`
 export const Content = styled.View`
   background-color: ${colors.secondary};
   flex: 1;
+  margin-left: 30px;
+  margin-top: 30px;
 `;
 export const IconArea = styled.View`
   width: 85%;
@@ -49,4 +51,24 @@ export const UserName = styled.Text`
   color: ${colors.secondary};
   font-family: ${colors.fonts.Roboto_700Bold};
   font-size: 18px;
+`;
+export const ContainerMoney = styled.View`
+  margin-bottom: 30px;
+`;
+
+export const MoneyTitle = styled.Text`
+  font-family: ${colors.fonts.Roboto_500Medium};
+  font-size: 26px;
+  color: ${colors.fonts.color};
+`;
+
+export const MoneyAmount = styled.Text`
+  font-family: ${colors.fonts.Roboto_700Bold};
+  font-size: 34px;
+  color: ${colors.fonts.color};
+  margin-top: 12px;
+`;
+
+export const ContainerMenuList = styled.View`
+  flex-direction: row;
 `;
