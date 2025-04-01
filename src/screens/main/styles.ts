@@ -9,12 +9,13 @@ export const Container = styled.View`
 export const Header = styled.View`
   background-color: ${colors.primary};
   height: 25%;
-  justify-content: center;
+
   align-items: center;
 `;
 export const ContainerHeader = styled.View`
   flex: 1;
   margin-top: ${Constnts.statusBarHeight};
+  justify-content: space-evenly;
 `;
 
 export const Content = styled.View`
