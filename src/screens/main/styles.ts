@@ -1,5 +1,7 @@
 import styled from "styled-components/native";
 import { colors } from "../../themes/theme";
+import { StatusBar } from "expo-status-bar";
+import Constnts from "expo-constants";
 
 export const Container = styled.SafeAreaView`
   flex: 1;
@@ -12,7 +14,7 @@ export const Header = styled.View`
 `;
 export const ContainerHeader = styled.View`
   flex: 1;
-  margin-top: 40px;
+  margin-top: ${Constnts.statusBarHeight};
 `;
 
 export const Content = styled.View`
