@@ -7,7 +7,6 @@ import {
   UserWapper,
   IconServices,
   Button,
-  UserInfo,
   UserName,
   ContainerHeader,
 } from "./styles";
@@ -16,9 +15,16 @@ import IconQUestionSVG from "../../../assets/svg/question";
 import IconOcultSVG from "../../../assets/svg/ocult";
 import IconEmailSVG from "../../../assets/svg/email";
 import { useState } from "react";
+import { Feather } from "@expo/vector-icons";
+import { colors } from "../../themes/theme";
 
 export default function Home() {
   const [name, setName] = useState("Thiago do nascimento morgado");
+  const [showAmount, setShowAmount] = useState(false);
+
+  function handleShowAmount() {
+    setShowAmount(!showAmount);
+  }
   return (
     <Container>
       <Header>
@@ -29,8 +35,12 @@ export default function Home() {
             </UserWapper>
 
             <IconServices>
-              <Button>
-                <IconOcultSVG />
+              <Button onPress={handleShowAmount}>
+                {showAmount ? (
+                  <IconOcultSVG />
+                ) : (
+                  <Feather name="eye" size={32} color={colors.secondary} />
+                )}
               </Button>
               <Button>
                 <IconQUestionSVG />

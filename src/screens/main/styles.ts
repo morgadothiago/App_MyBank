@@ -12,7 +12,7 @@ export const Header = styled.View`
 
   align-items: center;
 `;
-export const ContainerHeader = styled.View`
+export const ContainerHeader = styled.SafeAreaView`
   flex: 1;
   margin-top: ${Constnts.statusBarHeight};
   justify-content: space-evenly;
